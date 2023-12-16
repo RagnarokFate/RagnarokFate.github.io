@@ -12,6 +12,9 @@
     opacity: 0;
     animation: fadeInUp 0.5s ease-in-out forwards;
 }
+.event p{
+    font-weight: bold;
+}
 
 .event h3 {
     color: #000000;
