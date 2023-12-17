@@ -1,5 +1,9 @@
 body {
-    background: radial-gradient(circle at center, #46b8a3, rgb(14, 119, 107));
+    /*background: radial-gradient(circle at center, #46b8a3, rgb(14, 119, 107));*/
+    /*background: linear-gradient(-45deg, #5b46b8, rgb(128, 231, 60), #23a6d5, #46b8a3);*/
+    background: radial-gradient(circle at center,#46b8a3, #6446b8);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
 }
 
 table {
@@ -43,4 +47,21 @@ td button {
 }
 
 
-  
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 75% 75%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    75%{
+        background-position: 25% 25%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

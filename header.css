@@ -1,5 +1,7 @@
 /* Header styles */
-
+html{
+  scroll-behavior: smooth;
+}
 header {
     background-color: #333;
     color: #fff;
