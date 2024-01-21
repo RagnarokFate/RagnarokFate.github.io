@@ -1,0 +1,44 @@
+/* Header styles */
+html{
+    scroll-behavior: smooth;
+  }
+  header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      position: relative;
+    }
+  
+    header img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+    }
+    .header_text {
+      text-align: center;
+      color: #46b8a3;
+      text-justify: distribute;
+      font-size: 32px;
+      font-weight: 600;
+      padding: 20px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(70, 184, 163, 0.199); /* Add text shadow */
+      animation: flip-scale-down-ver 0.5s linear reverse both;
+    }
+  
+  
+  
+    @keyframes flip-scale-down-ver {
+      0% {
+        transform: scale(1) rotateY(0);
+      }
+      50% {
+        transform: scale(0.4) rotateY(-90deg);
+      }
+      100% {
+        transform: scale(1) rotateY(-180deg);
+      }
+    }

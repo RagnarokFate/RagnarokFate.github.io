@@ -1,0 +1,71 @@
+#loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+#loading-content {
+    text-align: center;
+    animation: fadeOut;
+    animation-duration: 3s;
+    animation-timing-function:ease-in;
+    animation-delay: 1sec;
+}
+
+#loading-content p,h1 {
+    text-align: center;
+      color: #46b8a3;
+      text-justify: distribute;
+      font-size: 32px;
+      font-weight: 600;
+      padding: 20px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(55, 146, 129, 0.185);
+    margin-bottom: 20px;
+}
+
+#loading-content img {
+    height: 50%;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the profile picture round */
+}
+
+#main-content {
+    animation: fadeIn;
+    animation-timing-function:ease-in;
+    animation-delay: 4sec;
+
+    opacity: 0; /* Initially hide the main content */
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+/* Keyframe animations */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

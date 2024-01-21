@@ -1,7 +1,7 @@
 body {
     /*background: radial-gradient(circle at center, #46b8a3, rgb(14, 119, 107));*/
     /*background: linear-gradient(-45deg, #5b46b8, rgb(128, 231, 60), #23a6d5, #46b8a3);*/
-    background: radial-gradient(circle at center,#46b8a3, #6446b8);
+    background: radial-gradient(circle at center,#46b8a3, #000000);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
