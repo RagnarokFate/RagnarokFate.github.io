@@ -1,0 +1,65 @@
+/* Style for the header */
+#intro_attach {
+    text-align: center;
+    margin-top: 16px;
+    padding: 10px;
+    background: #46b8a3;
+}
+
+/* Style for the introduction */
+#intro_text {
+    text-align: center;
+}
+
+/* Style for the image */
+#picture_Right {
+    width: 20%;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2s;
+}
+/* Style for the image */
+#picture_Left {
+    width: 20%;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2s;
+}
+/* Style for the qualifications section */
+.Privileges_and_Qualifications {
+    margin-left: -50px;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 3s;
+}
+
+/* Style for the qualifications list */
+.Privileges_and_Qualifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Privileges_and_Qualifications ul li {
+    margin-bottom: 8px;
+}
+
+
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+      transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+      transform: translateX(50%);
+    }
+  }

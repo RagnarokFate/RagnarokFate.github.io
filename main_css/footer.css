@@ -7,8 +7,9 @@ footer {
     bottom: 0;
     width: calc(100% - 2px); /* Adjust width to account for the removed padding */
     border-radius: 8px;
-    margin-top: auto; /* This ensures the footer stays at the bottom */
+    margin-top: 100%; /* This ensures the footer stays at the bottom */
     margin-right: 10px;
+    
 }
 
 
