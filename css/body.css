@@ -1,12 +1,14 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+
 body {
-    margin: auto;
-    font-family: 'Arial', sans-serif;
-    overflow: auto;
-    background: radial-gradient(circle at center,#46b8a3, #000000);
+    background: radial-gradient(circle at center,#46b8a3, #333);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    background-attachment: fixed;
 }
+
 
 @keyframes gradient {
     0% {
@@ -18,4 +20,7 @@ body {
     100% {
         background-position: 0% 0%;
     }
-}
+  }
+
+
+  

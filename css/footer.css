@@ -1,9 +1,16 @@
 footer {
-    background-color: #000000c5;
+    background-color: #333;
     color: #46b8a3;
-    padding: 5px;
-    text-align: center;
+    padding: 10px 0 10px 0; /* Cut 10px from the right side */
+    text-align: center;    
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 2px); /* Adjust width to account for the removed padding */
+    border-radius: 8px;
+    margin-top: auto; /* This ensures the footer stays at the bottom */
+    margin-right: 10px;
 }
+
 
 #Social_attach {
     font-size: 24px;
@@ -21,6 +28,8 @@ footer {
     margin-top: 20px;
     margin-left: 10px;
     animation: rotate-scale-up-ver 1s linear both 3s; /* Remove 'delay' */
+    border-radius: 8px;
+
 }
 
 @keyframes rotate-scale-up-ver {
