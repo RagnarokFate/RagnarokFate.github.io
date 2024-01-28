@@ -1,0 +1,171 @@
+.intro-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card-content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .image-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .image-container img {
+    /* width: 360px*/
+    height: 360px;
+    border-radius: 50%;
+    margin: 0 10px;
+    /* cursor: pointer; */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .qualification-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .qualification {
+    flex: 1;
+    padding: 5px;
+    margin: 0 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .qualification p {
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+.qualification h3{
+    font-weight: bold;
+
+}
+.qualification ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.qualification li {
+    opacity: 0;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+li:hover {
+    background-color: #46b8a3;
+}
+
+.passion_paragraph{
+    /* max-width: 600px; */
+    margin-top: 20px;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 1s;
+    margin-bottom: 20px;
+}
+
+.passion_paragraph h1 {
+    color: #000000;
+}
+
+.passion_paragraph p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.passion_paragraph:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.passion_paragraph:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.passion_paragraph:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.passion_paragraph:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.passion_paragraph:nth-child(5) {
+    animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.marquee-text {
+    display: inline-block;
+    margin-right: 40px; /* Adjust the spacing between texts */
+    animation: marqueeAnimation 20s linear infinite;
+    transform-origin: 100% 50%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff; /* Set text color */
+    text-decoration: black;
+    
+    padding: 10px; /* Add padding for better readability */
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-text:hover {
+    animation-play-state: paused; /* Pause the animation on hover */
+}
+
