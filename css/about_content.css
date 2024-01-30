@@ -1,0 +1,78 @@
+.timeline-container {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .year-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+
+  .year-button {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .year-button:hover {
+    background-color: #45a049;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+  }
+
+  .timeline-event {
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    opacity: 0.8;
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .timeline-event:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .timeline-event.active {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .event-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .event-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .event-description {
+    font-size: 20px;
+    color: #555;
+    margin-top: 15px;
+  }

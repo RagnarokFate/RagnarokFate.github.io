@@ -35,8 +35,72 @@
     </header>
     <link rel="stylesheet" href="css/about_content.css">
 
-    <h2>About & CV</h2>
+    <div style="text-align: center; color: black; font-weight: bold; font-size: 48px;">About & CV</div>
     
+    <div class="timeline-container">
+      <div class="year-bar" id="yearBar">
+        <button class="year-button" onclick="showEventsByYear(2000)">2000</button>
+        <button class="year-button" onclick="showEventsByYear(2018)">2018</button>
+        <button class="year-button" onclick="showEventsByYear(2019)">2019</button>
+        <button class="year-button" onclick="showEventsByYear(2020)">2020</button>
+        <button class="year-button" onclick="showEventsByYear(2021)">2021</button>
+        <button class="year-button" onclick="showEventsByYear(2022)">2022</button>
+        <button class="year-button" onclick="showEventsByYear(2023)">2023</button>
+        <button class="year-button" onclick="showEventsByYear(2024)">2024</button>
+        <!-- Add more year buttons as needed -->
+      </div>
+    
+      <div class="timeline" id="draggableTimeline">
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2000-11-01</div>
+          <div class="event-title">Birth</div>
+          <div class="event-description">I was born on this day. My journey began.</div>
+        </div>
+    
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2018-06-20</div>
+          <div class="event-title">High School Graduation</div>
+          <div class="event-description">Completed high school with honors and fond memories.</div>
+        </div>
+
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2018-11-01</div>
+          <div class="event-title">Work</div>
+          <div class="event-description">on my 18 birthday i started working on different professions and study along </div>
+        </div>
+        
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2019-01-01</div>
+          <div class="event-title">Work </div>
+          <div class="event-description">Continued Working as well as finding new hobbies</div>
+        </div>
+
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2020-03-08</div>
+          <div class="event-title">University of Haifa</div>
+          <div class="event-description">Starting my Bachelor degree of Computer Science in University of Haifa - 1st year</div>
+        </div>
+        
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2021-10-21</div>
+          <div class="event-title">University of Haifa </div>
+          <div class="event-description">Computer Science in University of Haifa - 2st year</div>
+        </div>
+        
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2022-10-18</div>
+          <div class="event-title">University of Haifa </div>
+          <div class="event-description">Computer Science in University of Haifa - 3st year</div>
+        </div>
+        
+        <div class="timeline-event" onmouseover="hoverEvent(this)" onmouseout="unhoverEvent(this)">
+          <div class="event-date">2023-12-31</div>
+          <div class="event-title">University of Haifa </div>
+          <div class="event-description">Computer Science in University of Haifa - 4st year</div>
+        </div>
+      </div>
+    </div>
+
     <footer>
         <h2 style="text-align: center;" id="Social_attach"> Socials </h1>
         <div style="text-align: center;">Connect with me on Github, LinkedIn, Instagram, and Discord. <br/> </div>
@@ -50,6 +114,7 @@
         </div>
     </footer>
     <script src="javascript\menu.js"></script>
+    <script src="javascript\about.js"></script>
 
 </body>
 </html>

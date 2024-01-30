@@ -33,11 +33,92 @@
       <span class="openbtn" onclick="openNav()" id="openBtn">&#9776;</span>
     </div>
     </header>
-    <link rel="stylesheet" href="css/palns_content.css">
+    <link rel="stylesheet" href="css/plans_content.css">
 
-    <h2>Plans</h2>
-      
-      
+    <div style="text-align: center; color: black; font-weight: bold; font-size: 48px;">PLANS</div>
+    
+    <div class="plans-container" id="plansContainer">
+      <div class="plan-item" id="plan1">
+        <input type="checkbox" class="plan-checkbox" id="plan1Checkbox" onclick="updatePlanStatus('plan1', 10)">
+        <div class="plan-details">
+          <div class="plan-title">Body Mesh Model AI</div>
+          <div class="plan-description">This project is a self-learning endeavor designed to achieve the integration of Body Detection, Muscles Movement, and Bones Movement by tracking users' diverse activities.</div>
+          <div class="plan-due">Due Date: 2025-12-31</div>
+          <div class="priority">Priority: High</div>
+          <div class="completion-bar-container">
+            <div class="completion-bar" id="plan1CompletionBar"></div>
+          </div>
+          <div class="completion-percentage" id="plan1Percentage">10%</div>
+        </div>
+        <div class="btn-container">
+          <!-- <button class="edit-btn" onclick="editPlan('plan1')">Edit</button> -->
+          <button class="delete-btn" onclick="deletePlan('plan1')">Delete</button>
+        </div>
+      </div>
+    
+      <div class="plan-item" id="plan2">
+        <input type="checkbox" class="plan-checkbox" id="plan2Checkbox" onclick="updatePlanStatus('plan2', 30)">
+        <div class="plan-details">
+          <div class="plan-title">Rock Paper Scissors SHOT!</div>
+          <div class="plan-description">Engaging in a game of "Rock Paper Scissors SHOT" against a computer involves frame and audio analysis and detection. This project utilizes the "MediaPipe Library" to implement hand pose detection, accurately determining whether the gesture corresponds to paper, rock, or scissors.</div>
+          <div class="plan-due">Due Date: 2025-12-31</div>
+          <div class="priority">Priority: Middle</div>
+          <div class="completion-bar-container">
+            <div class="completion-bar" id="plan2CompletionBar"></div>
+          </div>
+          <div class="completion-percentage" id="plan2Percentage">30%</div>
+        </div>
+        <div class="btn-container">
+          <!-- <button class="edit-btn" onclick="editPlan('plan2')">Edit</button> -->
+          <button class="delete-btn" onclick="deletePlan('plan2')">Delete</button>
+        </div>
+      </div>
+    
+      <div class="plan-item" id="plan3">
+        <input type="checkbox" class="plan-checkbox" id="plan3Checkbox" onclick="updatePlanStatus('plan3', 60)">
+        <div class="plan-details">
+          <div class="plan-title">Discord Bot</div>
+          <div class="plan-description">A student assistance bot is in the works, offering support for exam schedules, study sessions, music preferences, document organization, and AI-powered chat interaction with a built-in calculator. The goal is to provide students with a effortless and efficient tool to manage their academic responsibilities.</div>
+          <div class="plan-due">Due Date: 2024-12-31</div>
+          <div class="priority">Priority: Medium</div>
+          <div class="completion-bar-container">
+            <div class="completion-bar" id="plan3CompletionBar"></div>
+          </div>
+          <div class="completion-percentage" id="plan3Percentage">60%</div>
+        </div>
+        <div class="btn-container">
+          <!-- <button class="edit-btn" onclick="editPlan('plan3')">Edit</button> -->
+          <button class="delete-btn" onclick="deletePlan('plan3')">Delete</button>
+        </div>
+      </div>
+      <!-- Add more plans as needed -->
+    </div>
+    
+    <div class="add-plan-form" id="addPlanForm">
+      <h2>Add New Plan</h2>
+      <form onsubmit="addNewPlan(event)">
+        <label for="newPlanTitle">Title:</label>
+        <input type="text" id="newPlanTitle" required>
+    
+        <label for="newPlanDescription">Description:</label>
+        <textarea id="newPlanDescription" rows="3"></textarea>
+    
+        <label for="newPlanDueDate">Due Date:</label>
+        <input type="date" id="newPlanDueDate" required>
+    
+        <label for="newPlanPriority">Priority:</label>
+        <select id="newPlanPriority" required>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+    
+        <label for="newPlanCompletion">Completion Percentage:</label>
+        <input type="number" id="newPlanCompletion" min="0" max="100" required>
+    
+        <button type="submit">Add Plan</button>
+      </form>
+    </div>
 
     <footer>
         <h2 style="text-align: center;" id="Social_attach"> Socials </h1>
@@ -52,6 +133,7 @@
         </div>
     </footer>
     <script src="javascript\menu.js"></script>
+    <script src="javascript\plans.js"></script>
 
 </body>
 </html>
