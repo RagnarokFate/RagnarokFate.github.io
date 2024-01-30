@@ -14,14 +14,3 @@ function showEventsByYear(year) {
   function unhoverEvent(element) {
     element.classList.remove('active');
   }
-
-
-  function downloadCV() {
-    // Replace 'path/to/your/cv.docx' with the actual path to your document file
-    var downloadLink = document.createElement('a');
-    downloadLink.href = 'document/cv.pdf';
-    downloadLink.download = 'cv.pdf';
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-}
