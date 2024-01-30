@@ -75,6 +75,7 @@
     font-size: 20px;
     color: #555;
     margin-top: 15px;
+    text-decoration: none; /* Remove underline from the link */
   }
 
 
@@ -92,7 +93,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    background-color: #46b8a3;
+    background-color: #1c7565;
     color: #fff;
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -102,5 +103,5 @@
 }
 
 .download-link:hover {
-    background-color: #1c7565;
+    background-color: #333;
 }
