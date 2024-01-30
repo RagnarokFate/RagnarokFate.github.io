@@ -114,3 +114,27 @@ cursor: pointer;
 color: #fff;
 font-size: 1.5em;
 }
+
+.loading-bar-container {
+    width: 80%;
+    margin: 20px auto;
+    height: 4px;
+    background-color: #777;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .loading-bar {
+    height: 100%;
+    width: 50%;
+    background-color: #333;
+    animation: moveBackAndForth 4s ease-in-out infinite;
+  }
+  @keyframes moveBackAndForth {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+  }
