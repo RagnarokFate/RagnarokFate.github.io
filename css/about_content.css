@@ -76,3 +76,31 @@
     color: #555;
     margin-top: 15px;
   }
+
+
+  .download-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px; /* Add margin for spacing */
+    margin-right: 2px;
+}
+
+.download-button {
+    display:flex;
+    padding: 15px 25px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #46b8a3;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none; /* Add this line to remove the default button border */
+    outline: none; /* Add this line to remove the default button outline */
+}
+
+.download-button:hover {
+    background-color: #1c7565;
+}
